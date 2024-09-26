@@ -1,0 +1,119 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #6dd5ed,
+    #2193b0
+  ); /* Blue gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Underline effect */
+}
+
+input {
+  padding: 12px;
+
+  width: 60%;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 10px; /* Space between input and button */
+}
+
+input:focus {
+  width: 65%;
+  background: rgba(227, 227, 227, 0.9);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #2193b0;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 1px; /* Adjust button alignment with input */
+}
+
+button:hover {
+  background-color: #2193b0;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  margin-top: 30px; /* Added more margin above weather info */
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.weather-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.weather-info p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.error {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.2);
+}
